@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import thedrake.core.ui.StackView?>
+<?import thedrake.core.ui.CapturedView?>
+<?import thedrake.core.ui.BoardView?>
+
+<BorderPane fx:id="gameScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thedrake.GameSceneController">
+  <stylesheets>
+      <URL value="@style.css" />
+  </stylesheets>
+    <center>
+        <VBox maxWidth="500" alignment="CENTER" spacing="50">
+            <BoardView fx:id="board" id="boardView">
+            </BoardView>
+        </VBox>
+    </center>
+    <top>
+        <HBox style="-fx-padding: 10px" alignment="CENTER" spacing="100">
+            <VBox styleClass="stack" minHeight="130" prefWidth="500">
+                <Text text="Stack" styleClass="sectionTitle" />
+                <StackView fx:id="orangeStack" />
+            </VBox>
+            <VBox styleClass="captured" minHeight="130" prefWidth="500">
+                <Text text="Captured" styleClass="sectionTitle" />
+                <CapturedView fx:id="orangeCaptured" spacing="-50" />
+            </VBox>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox style="-fx-padding: 10px" alignment="CENTER" spacing="100">
+            <VBox styleClass="stack" minHeight="130" prefWidth="500">
+                <Text text="Stack"  styleClass="sectionTitle" />
+                <StackView fx:id="blueStack" />
+            </VBox>
+            <VBox styleClass="captured" minHeight="130" prefWidth="500">
+                <Text text="Captured" styleClass="sectionTitle" />
+                <CapturedView fx:id="blueCaptured" spacing="-50" />
+            </VBox>
+        </HBox>
+    </bottom>
+</BorderPane>

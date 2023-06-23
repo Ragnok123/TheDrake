@@ -1,0 +1,52 @@
+#gameScreen{
+    -fx-background-image: url("GameBackground.jpg");
+    -fx-background-size: cover;
+}
+
+#stackBlueView{
+    -fx-padding: 10px;
+    -fx-background-image: url("stack.jpg");
+    -fx-background-size: cover;
+}
+
+#stackOrangeView{
+    -fx-padding: 10px;
+    -fx-background-image: url("stack.jpg");
+    -fx-background-size: cover;
+}
+
+#capturedBlueView{
+    -fx-padding: 10px;
+    -fx-background-image: url("captured.jpg");
+    -fx-background-size: cover;
+}
+
+#capturedOrangeView{
+    -fx-padding: 10px;
+    -fx-background-image: url("captured.jpg");
+    -fx-background-size: cover;
+}
+
+#boardView{
+    -fx-background-image: url("board.jpg");
+    -fx-background-size: cover;
+}
+
+.sectionTitle{
+    -fx-font-size: 30;
+    -fx-font-family: "MinecraftiaRegular";
+    -fx-text-fill: red;
+    -fx-text-alignment: center;
+}
+
+.stack {
+    -fx-padding: 10px;
+    -fx-background-image: url("stack.jpg");
+    -fx-background-size: cover;
+}
+
+.captured {
+    -fx-padding: 10px;
+    -fx-background-image: url("captured.jpg");
+    -fx-background-size: cover;
+}
